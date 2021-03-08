@@ -15,7 +15,7 @@
 async function showJoke() {
     const result = await fetch('https://icanhazdadjoke.com/slack');
     const res = await result.json();
-    console.log(res.attachments[0].text);
+    // console.log(res.attachments[0].text);
     document.getElementById('broma').innerHTML = res.attachments[0].text;
 };
 
