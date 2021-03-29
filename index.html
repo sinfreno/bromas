@@ -4,13 +4,19 @@
         <title>Web de bromas aleatorias</title>
 
     </head>
-
-    <body>
+<!-- Uso onload para traer los datos desde la API al cargar la web -->
+    <body onload='showWeather()'>
         <div class="container">
+        <div>
+            <p>Hoy el cielo en Barcelona está <h3 id="cielo"></h3></p>
+            <p>Se espera una temperatura máxima de <h3 id="temperaturamax"></h3></p>
+            <p>Y una temperatura mínima de <h3 id="temperaturamin"></h3></p>
+        </div>
             <button onclick="showJoke()"> clica para obtener una broma</button>
             <h3 id="broma"></h3>
         </div>
 
     </body>
     <script src="bromas.js" type="text/javascript"></script>
+    <script src="tiempo.js" type="text/javascript"></script>
 </html>
